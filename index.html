@@ -6,154 +6,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./scripts/cart.js"></script>
-    <script defer src="./scripts/index.js"></script>
+    <script type="module" defer src="./scripts/index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <h1>Scammer`s shop</h1>
-        <div class="cart"><img
-                src="https://avatars.mds.yandex.net/i?id=b5f6af4b0ed8adef42cd7018f8e38814-5219049-images-thumbs&n=13"
-                alt=""></div>
-    </header>
-    <main>
-        <div class="products">
-            <div class="products__line">
-                <div class="products__item group-1">
-                    <h3 class="products__title">Телефон A</h3>
-                    <img class="products__img"
-                        src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">1000</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
+    <div class="wrap">
+        <div class="container">
+            <header class="header">
+                <h1>Scammer`s shop</h1>
+                <div class="header__cart">
+                    <img id="cartOpenIcon" src="./images/cart.png"  alt="">
+                    <span id="cartCount">0</span>
                 </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Ноутбук A</h3>
-                    <img class="products__img"
-                        src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">1000</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
+            </header>
+            <main class="main">
+                <div class="products">
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Телефон A</h3>
+                        <img class="products__img"
+                            src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">1000</span>$</p>
+                        <button class="products__buy" data-id="0">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Ноутбук A</h3>
+                        <img class="products__img"
+                            src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">1000</span>$</p>
+                        <button class="products__buy" data-id="1">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Планшет A</h3>
+                        <img class="products__img"
+                            src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">1000</span>$</p>
+                        <button class="products__buy" data-id="2">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Компьютер A</h3>
+                        <img class="products__img"
+                            src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">1000</span>$</p>
+                        <button class="products__buy" data-id="3">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Телефон B</h3>
+                        <img class="products__img"
+                            src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">900</span>$</p>
+                        <button class="products__buy" data-id="4">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Ноутбук B</h3>
+                        <img class="products__img"
+                            src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">900</span>$</p>
+                        <button class="products__buy" data-id="5">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Планшет B</h3>
+                        <img class="products__img"
+                            src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">900</span>$</p>
+                        <button class="products__buy" data-id="6">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Компьютер B</h3>
+                        <img class="products__img"
+                            src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">900</span>$</p>
+                        <button class="products__buy" data-id="7">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Телефон C</h3>
+                        <img class="products__img"
+                            src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">800</span>$</p>
+                        <button class="products__buy" data-id="8">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Ноутбук C</h3>
+                        <img class="products__img"
+                            src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">800</span>$</p>
+                        <button class="products__buy" data-id="9">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Планшет C</h3>
+                        <img class="products__img"
+                            src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">800</span>$</p>
+                        <button class="products__buy" data-id="10">Add to cart</button>
+                    </div>
+                    <div class="products__item group-1">
+                        <h3 class="products__title">Компьютер C</h3>
+                        <img class="products__img"
+                            src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">800</span>$</p>
+                        <button class="products__buy" data-id="11">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Телефон D</h3>
+                        <img class="products__img"
+                            src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">700</span>$</p>
+                        <button class="products__buy" data-id="12">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Ноутбук D</h3>
+                        <img class="products__img"
+                            src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">700</span>$</p>
+                        <button class="products__buy" data-id="13">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Планшет D</h3>
+                        <img class="products__img"
+                            src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
+                            alt="">
+                        <p class="products__info">Price: <span class="products__price">700</span>$</p>
+                        <button class="products__buy" data-id="14">Add to cart</button>
+                    </div>
+                    <div class="products__item group-2">
+                        <h3 class="products__title">Компьютер D</h3>
+                        <img class="products__img"
+                            src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg" alt="">
+                        <p class="products__info">Price: <span class="products__price">700</span>$</p>
+                        <button class="products__buy" data-id="15">Add to cart</button>
+                    </div>
                 </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Планшет A</h3>
-                    <img class="products__img"
-                        src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">1000</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
+                <div id="modal" class="modal wrap">
+                    <div class="cart">
+                        <button id="clearCart" class="cart__clear">clear</button>
+                        <div id="cartContent" class="cart__content"></div>
+                        <span id="cartClose" class="cart__close"><img width="30" src="./images/i.jpg" alt=""></span>
+                    </div>
                 </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Компьютер A</h3>
-                    <img class="products__img" src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">1000</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-            </div>
-            <div class="products__line">
-                <div class="products__item group-2">
-                    <h3 class="products__title">Телефон B</h3>
-                    <img class="products__img"
-                        src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">900</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Ноутбук B</h3>
-                    <img class="products__img"
-                        src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">900</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Планшет B</h3>
-                    <img class="products__img"
-                        src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">900</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Компьютер B</h3>
-                    <img class="products__img" src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">900</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-            </div>
-            <div class="products__line">
-                <div class="products__item group-1">
-                    <h3 class="products__title">Телефон C</h3>
-                    <img class="products__img"
-                        src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">800</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Ноутбук C</h3>
-                    <img class="products__img"
-                        src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">800</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Планшет C</h3>
-                    <img class="products__img"
-                        src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">800</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-1">
-                    <h3 class="products__title">Компьютер C</h3>
-                    <img class="products__img" src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">800</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-            </div>
-            <div class="products__line">
-                <div class="products__item group-2">
-                    <h3 class="products__title">Телефон D</h3>
-                    <img class="products__img"
-                        src="https://i.citrus.ua/uploads/shop/6/f/6f00fca8f35552289c85270875c3c40f.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">700</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Ноутбук D</h3>
-                    <img class="products__img"
-                        src="https://compbest.com.ua/content/images/38/acer_aspire_a315-21-22re_15.6_1920kh1080_tn_led_amd_e2-9000_2_yadra_po_1.8_-_2.2_ghz_8_gb_ddr4_128_gb_ssd_webcam-40387038026026.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">700</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Планшет D</h3>
-                    <img class="products__img"
-                        src="https://avatars.mds.yandex.net/i?id=c6bba54dd4aa257406ff14124c6b0f1c-3590262-images-thumbs&n=13"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">700</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-                <div class="products__item group-2">
-                    <h3 class="products__title">Компьютер D</h3>
-                    <img class="products__img" src="https://images.ua.prom.st/673740228_w640_h640_arenda-kompyutera.jpg"
-                        alt="">
-                    <p class="products__info">Price: <span class="products__price">700</span>$</p>
-                    <button class="products__buy" data-id="0">Add to cart</button>
-                </div>
-            </div>
+            </main>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
