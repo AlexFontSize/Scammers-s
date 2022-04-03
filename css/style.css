@@ -106,6 +106,18 @@ img{
   font-size: 1.3rem;
   color: red;
 }
+.menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.menu a{
+  color: black;
+}
+.menu a[href="#"]{
+  color: red;
+}
 
 .main {
   border: 1px solid black;
@@ -125,6 +137,7 @@ img{
   padding: 5px 10px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .group-1 {
@@ -138,6 +151,9 @@ img{
 .products__img {
   width: 100%;
   height: 200px;
+}
+.show-item{
+  opacity: 0.7;
 }
 .modal {
   display: none;
@@ -156,12 +172,23 @@ img{
   border: 1px solid black;
   border-radius: 15px;
   background: white;
+}
+.cart__content{
+  height: 80%;
   overflow-y: auto;
+  margin-top: 30px;
 }
 .cart__close {
   position: absolute;
   top: 7px;
-  right: 7px;    
+  right: 7px; 
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/i.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .cart__clear{
   position: absolute;
@@ -170,7 +197,77 @@ img{
   font-size: 14px;
   background: rgb(145, 219, 248);
 }
-
+.cart__table{
+  width: 100%;
+}
+.cart__table td{
+  height: 45px;
+}
+.cart__table tr td:nth-of-type(1){
+  width: 50%;
+}
+.cart__image{
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.alert-product{
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  opacity: 0;
+  animation: alert-product 2s 1;
+}
+@keyframes alert-product {
+  30%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+}
+.alert-product p{
+  background: white;
+  font-size: 2rem;
+  color: red;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+.item-page{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: item-page .5s 1;
+}
+@keyframes item-page {
+  0%{
+    transform: scale(0.1);
+  }
+}
+.item-page__content{
+  background: white;
+  margin-top: 100px;
+  border: 1px solid black;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 0 100px;
+}
+.item-page__img{
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item-page__close{
+  font-size: 22px;
+}
 @media (max-width: 900px){
   .products{
     grid-template-rows: repeat(8, auto);
