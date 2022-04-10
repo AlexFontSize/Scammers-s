@@ -121,7 +121,10 @@ export function createItemPage(e) {
     `;
     document.body.append(itemPage);
     document.getElementById("item-close")
-        .addEventListener("click", () => itemPage.remove());
+        .addEventListener("click", () => {
+            itemPage.remove()
+            document.body.style.overflow = "auto";
+        });
     const img = document.querySelector(".item-page__img");
     img.addEventListener("mousemove", e => {
         img.style.backgroundPositionX = -e.offsetX + 50 + "px";

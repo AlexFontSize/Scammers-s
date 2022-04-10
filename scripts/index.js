@@ -21,7 +21,9 @@ cartItemCount(cartCount);
 showItemCart(itemBuy);
 cartClose.addEventListener("click", () => {
     modal.style.display = "none";
-    document.body.style.overflow = "auto";
+    if(!document.querySelector(".item-page")){
+        document.body.style.overflow = "auto";
+    }
 });
 cartOpenIcon.addEventListener("click", () => {
     renderCart(cartContent, cartCount, itemBuy);
@@ -33,5 +35,8 @@ itemBuy.forEach(btn => {
     btn.addEventListener("click", e => addToCart(e, ".products__title", ".products__price", cartCount, itemBuy));
 });
 productItems.forEach(item => {
-    item.addEventListener("click", createItemPage)
+    item.addEventListener("click", createItemPage);
+    item.addEventListener("click", () => {
+        document.body.style.overflow = "hidden";
+    })
 });
